@@ -1,0 +1,19 @@
+@import "typo.css";
+@import "variables.css";
+@import "header.css";
+@import "articles.css";
+@import "tablette.css";
+@import "laptop.css";
+@import "desktop.css";
+/*MOBILE FIRST DESIGN*/
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home__page {
+  height: auto;
+  width: 100%;
+}

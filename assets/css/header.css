@@ -1,0 +1,17 @@
+.header__Primary,
+.nav__primary,
+.item__list--primary {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.nav__item {
+  list-style-type: none;
+}
+.nav__item > a {
+  color: #000;
+  text-decoration: none;
+}
