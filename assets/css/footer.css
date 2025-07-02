@@ -1,0 +1,15 @@
+footer {
+  height: 15vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+footer:has(.footer__signature) {
+  color: #fff;
+  font-family: var(--font-family-ftFamilyTwo);
+}

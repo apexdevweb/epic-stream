@@ -13,13 +13,13 @@
   height: 4px;
   width: 12vw;
   border-radius: 10px;
-  background-color: #000;
+  background-color: #fff;
 }
 .listview {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
   animation: discover-menu 0.5s ease 0s 1 normal forwards;
 }
 .open__barre:nth-child(1) {

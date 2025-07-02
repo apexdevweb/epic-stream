@@ -10,7 +10,7 @@
   /*SHADOW FONT*/
   --text-shadow-txtShdw: 0px 0px 3px #000;
   /*SHADOW DROP*/
-  --drop-shadow-drpShdw: 0px 0px 5px #000;
+  --drop-shadow-drpShdw: 0px 0px 2px #000;
   /*BACKGROUND COLOR*/
   --background-color-bgColorEl: rgba(0, 0, 0, 0.834);
 }
