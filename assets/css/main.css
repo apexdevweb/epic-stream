@@ -5,6 +5,7 @@
 @import "tablette.css";
 @import "laptop.css";
 @import "desktop.css";
+@import "mobilemenu.css";
 /*MOBILE FIRST DESIGN*/
 *::before,
 *:after {
@@ -12,8 +13,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #222;
+}
 .home__page {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: stretch;
   height: auto;
   width: 100%;
+  background-color: #222;
 }
