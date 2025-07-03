@@ -47,3 +47,139 @@ body {
   width: 100%;
   background-color: #222;
 }
+.video__page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  background-color: #222;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "A B C D"
+    "E F G H"
+    "I J K L"
+    "M N O P";
+}
+.A,
+.B,
+.C,
+.D,
+.E,
+.F,
+.G,
+.H,
+.I,
+.J,
+.K,
+.L,
+.M,
+.N,
+.O,
+.P {
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+.A:hover,
+.B:hover,
+.C:hover,
+.D:hover,
+.E:hover,
+.F:hover,
+.G:hover,
+.H:hover,
+.I:hover,
+.J:hover,
+.K:hover,
+.L:hover,
+.M:hover,
+.N:hover,
+.O:hover,
+.P:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  box-shadow: var(--boxe-shadow-bxeShdw);
+  background-color: #000;
+  border: 1px solid #fff;
+}
+.grid__categ--item {
+  font-family: var(--font-family-ftFamilyOne);
+  font-size: var(--font-size-ftSizeStandar);
+  text-decoration: none;
+  color: #fff;
+}
+.A {
+  grid-area: A;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+}
+
+.D {
+  grid-area: D;
+}
+
+.E {
+  grid-area: E;
+}
+
+.F {
+  grid-area: F;
+}
+
+.G {
+  grid-area: G;
+}
+
+.H {
+  grid-area: H;
+}
+
+.I {
+  grid-area: I;
+}
+
+.J {
+  grid-area: J;
+}
+
+.K {
+  grid-area: K;
+}
+
+.L {
+  grid-area: L;
+}
+
+.M {
+  grid-area: M;
+}
+
+.N {
+  grid-area: N;
+}
+
+.O {
+  grid-area: O;
+}
+
+.P {
+  grid-area: P;
+}
