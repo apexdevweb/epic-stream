@@ -1,0 +1,181 @@
+@import "typo.css";
+@import "variables.css";
+@import "header.css";
+@import "footer.css";
+@import "articles.css";
+@import "tablette.css";
+@import "laptop.css";
+@import "desktop.css";
+@import "mobilemenu.css";
+@import "logAdm.css";
+/*MOBILE FIRST DESIGN*/
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+}
+.main__separate {
+  margin: 0 auto 15px auto;
+  height: 4px;
+  width: 50%;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.main__wrapper {
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+.secondary__title {
+  font-family: var(--font-family-ftFamilyOne);
+  font-size: var(--font-size-ftSizeStandar);
+  color: #fff;
+  letter-spacing: 2px;
+}
+.home__page {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: stretch;
+  height: auto;
+  width: 100%;
+}
+.video__page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  background-color: #222;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "A B C"
+    "D E F"
+    "G H I"
+    "J K L"
+    "M N O";
+}
+.A,
+.B,
+.C,
+.D,
+.E,
+.F,
+.G,
+.H,
+.I,
+.J,
+.K,
+.L,
+.M,
+.N,
+.O {
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+.A:hover,
+.B:hover,
+.C:hover,
+.D:hover,
+.E:hover,
+.F:hover,
+.G:hover,
+.H:hover,
+.I:hover,
+.J:hover,
+.K:hover,
+.L:hover,
+.M:hover,
+.N:hover,
+.O:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  box-shadow: var(--boxe-shadow-bxeShdw);
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.grid__categ--item {
+  font-family: var(--font-family-ftFamilyOne);
+  font-size: var(--font-size-ftSizeStandar);
+  text-decoration: none;
+  color: #fff;
+}
+.A {
+  grid-area: A;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+}
+
+.D {
+  grid-area: D;
+}
+
+.E {
+  grid-area: E;
+}
+
+.F {
+  grid-area: F;
+}
+
+.G {
+  grid-area: G;
+}
+
+.H {
+  grid-area: H;
+}
+
+.I {
+  grid-area: I;
+}
+
+.J {
+  grid-area: J;
+}
+
+.K {
+  grid-area: K;
+}
+
+.L {
+  grid-area: L;
+}
+
+.M {
+  grid-area: M;
+}
+
+.N {
+  grid-area: N;
+}
+
+.O {
+  grid-area: O;
+}

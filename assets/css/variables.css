@@ -1,0 +1,18 @@
+:root {
+  /*FONT FAMILY */
+  --font-family-ftFamilyPrimary: "Lobster", sans-serif;
+  --font-family-ftFamilyOne: "Saira", sans-serif;
+  --font-family-ftFamilyTwo: "Raleway", sans-serif;
+  /*FONT SIZE */
+  --font-size-ftSizeStandar: 1.2rem;
+  --font-size-ftSizeMedium: 1.7rem;
+  --font-size-ftSizeBig: 3rem;
+  /*SHADOW FONT*/
+  --text-shadow-txtShdw: 0px 0px 3px #000;
+  /*SHADOW DROP*/
+  --drop-shadow-drpShdw: 0px 0px 2px #000;
+  /*SHADOW Boxe*/
+  --boxe-shadow-bxeShdw: 0px 0px 5px #000;
+  /*BACKGROUND COLOR*/
+  --background-color-bgColorEl: rgba(0, 0, 0, 0.834);
+}

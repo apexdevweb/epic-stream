@@ -1,0 +1,47 @@
+.barrets__container {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 75%;
+  height: 4vh;
+  width: 15vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.barre {
+  height: 4px;
+  width: 12vw;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.listview {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  animation: discover-menu 0.5s ease 0s 1 normal forwards;
+}
+.open__barre:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 5px);
+  transition: 0.4s ease;
+}
+.open__barre:nth-child(2) {
+  visibility: hidden;
+}
+.open__barre:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+  transition: 0.4s ease;
+}
+
+@keyframes discover-menu {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
