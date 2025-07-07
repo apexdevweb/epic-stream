@@ -8,6 +8,7 @@
 @import "desktop.css";
 @import "mobilemenu.css";
 @import "logAdm.css";
+@import "administrator.css";
 /*MOBILE FIRST DESIGN*/
 *::before,
 *:after {

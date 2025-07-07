@@ -1,0 +1,74 @@
+.admin__page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+.admin__title--wrapper {
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+.admin__title {
+  color: #fff;
+  font-family: var(--font-family-ftFamilyTwo);
+  font-size: var(--font-size-ftSizeStandar);
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.admin_sub--container {
+  min-height: 20vh;
+  min-width: 80vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.admin__vid--modif {
+  display: none;
+  text-decoration: underline;
+}
+.admin__vid--modif > form {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/*ajout de la class en javascript*/
+.view__form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-ftSizeStandar);
+  letter-spacing: 1px;
+  font-family: var(--font-family-ftFamilyTwo);
+  color: #fff;
+  min-height: 15vh;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.admin__menu--btn {
+  height: 15vh;
+  width: 20vw;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: var(--font-size-ftSizeMedium);
+}
+.admin__menu--btn:hover {
+  color: cornflowerblue;
+  transition: 0.3s ease-in-out;
+  background-color: #222;
+}

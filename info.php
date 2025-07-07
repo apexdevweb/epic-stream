@@ -1,7 +1,6 @@
 <?php
+require_once "backend/script/adm_login.php";
 require "include/title.php";
-
-require_once "backend/connection/adm_login.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,7 +21,7 @@ require "include/head.php";
         <section class="home__page">
             <article>
                 <hgroup>
-                    <h3>Lorem</h3>
+                    <h3>Lorem.</h3>
                     <h4>Lorem, ipsum.</h4>
                 </hgroup>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque maxime
@@ -32,10 +31,9 @@ require "include/head.php";
                 </p>
             </article>
             <div class="form__wrapper">
-                <form method="post">
+                <form method="POST">
                     <input type="text" name="adm_name" placeholder="Name" required>
                     <input type="password" name="adm_pass" placeholder="Password" required>
-                    <input type="password" name="cfrm_pass" placeholder="Confirm password" required>
                     <input type="submit" value="Login" name="log_admin">
                 </form>
             </div>

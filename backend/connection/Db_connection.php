@@ -1,7 +1,6 @@
 <?php
 class Db_connection
 {
-
     private $host = "localhost";
     private $dbname = "epicstream";
     private $username = "root";
