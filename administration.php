@@ -45,9 +45,28 @@ require "include/head.php";
             </fieldset>
             <fieldset class="admin__vid--modif">
                 <legend>Supprimer un film</legend>
+                <form method="post">
+                    <span class="search__item"><input type="search" placeholder="Titre" name="movie_del_search"><button name="search_movie"><i class=' fa-brands fa-searchengin'></i></button></span>
+                    <div class="search__item--result">
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                    </div>
+                </form>
             </fieldset>
             <fieldset class="admin__vid--modif">
                 <legend>Modifier un film</legend>
+                <form method="post">
+                    <span class="search__item"><input type="search" placeholder="Titre" name="movie_del_search"><button name="search_movie"><i class="fa-solid fa-magnifying-glass"></i></button></span>
+                    <input type="text" name="movie_modif_titre" placeholder="Titre">
+                    <textarea name="movie_modif_description" cols="30" rows="10" placeholder="description"></textarea>
+                    <input type="submit" value="Modifier" name="modif_movie">
+                </form>
             </fieldset>
             <br>
             <hr class="main__separate">
@@ -56,11 +75,18 @@ require "include/head.php";
                 <button class="admin__menu--btn"><i class="fa-solid fa-minus"></i></button>
                 <button class="admin__menu--btn"><i class="fa-solid fa-gear"></i></button>
             </div>
+            <br>
+            <hr class="main__separate">
+            <div class="chart__container">
+                <canvas id="myChart"></canvas>
+            </div>
         </section>
     </main>
     <footer>
         <p class="footer__signature">© by ScriptEnjoyer</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/chart.js"></script>
     <script src="assets/js/paramsVid.js"></script>
     <script src="assets/js/mobilemenu.js"></script>
 </body>

@@ -41,6 +41,12 @@
   border-radius: 10px;
   position: absolute;
 }
+.vid__article--btn-view:hover {
+  transform: scale(1.09);
+  background: linear-gradient(to right, #0099f7, #f11712);
+  color: #000;
+}
+
 .vid__article--btn-view > a {
   font-size: var(--font-size-ftSizeStandar);
   color: #fff;

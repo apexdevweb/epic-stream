@@ -39,3 +39,10 @@
   color: #fff;
   text-decoration: none;
 }
+.nav__item > a:hover i {
+  color: transparent;
+  background: linear-gradient(to right, #0099f7, #f11712);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

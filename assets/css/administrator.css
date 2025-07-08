@@ -30,6 +30,7 @@
   justify-content: space-evenly;
   border: 1px solid #fff;
   border-radius: 10px;
+  background-color: #222;
 }
 .admin__vid--modif {
   display: none;
@@ -64,11 +65,80 @@
   background: none;
   border: 2px solid #fff;
   border-radius: 5px;
-  color: #fff;
+  color: transparent;
+  background: linear-gradient(to right, #0099f7, #f11712);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: var(--font-size-ftSizeMedium);
 }
 .admin__menu--btn:hover {
-  color: cornflowerblue;
+  cursor: pointer;
   transition: 0.3s ease-in-out;
-  background-color: #222;
+  border-color: #0099f7;
+  box-shadow: var(--boxe-shadow-bxeShdw);
+}
+.search__item {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.search__item > input[type="search"] {
+  height: auto;
+  min-width: 30vw;
+}
+
+.search__item > button {
+  height: 5vh;
+  min-width: 15vw;
+  background: #222;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.search__item > button > i {
+  color: transparent;
+  background: linear-gradient(to right, #0099f7, #f11712);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--font-size-ftSizeMedium);
+}
+
+.search__item > button:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-color: #0099f7;
+  box-shadow: var(--boxe-shadow-bxeShdw);
+}
+.search__item--result {
+  height: 35vh;
+  width: 100%;
+  background: #222;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.search__item--list {
+  font-family: var(--font-family-ftFamilyTwo);
+  font-size: var(--font-size-ftSizeStandar);
+}
+.search__item--list:hover i {
+  cursor: pointer;
+  color: transparent;
+  background: linear-gradient(to right, #0099f7, #f11712);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.chart__container {
+  height: auto;
+  width: 92vw;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
