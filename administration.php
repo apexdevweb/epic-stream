@@ -1,6 +1,9 @@
 <?php
 require "backend/security/adminSecure.php";
 require "include/title.php";
+require_once "backend/script/addvid.php";
+require_once "backend/script/removevid.php";
+require_once "backend/script/modifvid.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,10 +26,10 @@ require "include/head.php";
                 <h3 class="admin__title"><?= "Bienvenue" . " " . $_SESSION["admin_data"]["adm_name"] ?></h3>
             </div>
             <fieldset class="admin__vid--modif">
-                <legend>Ajouter un film</legend>
+                <legend><?= $legend[0] ?></legend>
                 <form method="post" enctype="multipart/form-data">
                     <input type="text" placeholder="Titre" name="movie_title">
-                    <input type="text" placeholder="Date de sortie">
+                    <input type="text" placeholder="Date de sortie" name="release_date">
                     <label for="movie_gender">Genre</label>
                     <select name="movie_gender">
                         <option value="Action">Action</option>
@@ -44,7 +47,7 @@ require "include/head.php";
                 </form>
             </fieldset>
             <fieldset class="admin__vid--modif">
-                <legend>Supprimer un film</legend>
+                <legend><?= $legend[1] ?></legend>
                 <form method="post">
                     <span class="search__item"><input type="search" placeholder="Titre" name="movie_del_search"><button name="search_movie"><i class=' fa-brands fa-searchengin'></i></button></span>
                     <div class="search__item--result">
@@ -60,7 +63,7 @@ require "include/head.php";
                 </form>
             </fieldset>
             <fieldset class="admin__vid--modif">
-                <legend>Modifier un film</legend>
+                <legend><?= $legend[2] ?></legend>
                 <form method="post">
                     <span class="search__item"><input type="search" placeholder="Titre" name="movie_del_search"><button name="search_movie"><i class="fa-solid fa-magnifying-glass"></i></button></span>
                     <input type="text" name="movie_modif_titre" placeholder="Titre">
@@ -83,7 +86,7 @@ require "include/head.php";
         </section>
     </main>
     <footer>
-        <p class="footer__signature">© by ScriptEnjoyer</p>
+        <p class="footer__signature"><?= $footer_signature ?></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/chart.js"></script>
