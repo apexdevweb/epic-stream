@@ -22,7 +22,7 @@ if (isset($_POST['movie_add'])) {
         }
 
         if ($movie_verif->rowCount() === 0) {
-            include "src/coverScript.php";
+            require "src/coverScript.php";
         } else {
             echo "Cette vidéo existe déjà";
         }
