@@ -180,3 +180,11 @@ body {
 .O {
   grid-area: O;
 }
+.categ__container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}

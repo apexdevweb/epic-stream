@@ -52,4 +52,3 @@ class Video
         return $this->vid_cover;
     }
 }
-// $films = new Video();

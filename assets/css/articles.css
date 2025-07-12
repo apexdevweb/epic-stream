@@ -75,16 +75,24 @@
   font-family: var(--font-family-ftFamilyOne);
 }
 .video__article--title-container {
-  padding-left: 5px;
+  padding-left: 10px;
   text-align: left;
   height: auto;
   width: 100%;
 }
-.video__article--title-container:has(:is(h2, h3)) {
+.title__container--cover {
+  height: 50vh;
+  width: auto;
+}
+.video__article--title-container > h2 {
   font-family: var(--font-family-ftFamilyOne);
-  color: #fff;
+  font-size: var(--font-size-ftSizeMedium);
   letter-spacing: 1px;
-  text-shadow: var(--text-shadow-txtShdw);
+  color: transparent;
+  background: linear-gradient(to right, #0099f7, #f11712);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .video__langage--container {
   padding: 8px;
