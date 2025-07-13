@@ -232,7 +232,7 @@ switch ($page) {
         break;
     case 'science-fiction':
         foreach ($videos as $video) {
-            if ($video->getVidGender() === "Science fiction") {
+            if ($video->getVidGender() === "Science-fiction") {
         ?>
                 <article class="vid__article--primary-container">
                     <picture class="vid__article--pict">

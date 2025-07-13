@@ -2,8 +2,7 @@
 require "backend/security/adminSecure.php";
 require "include/title.php";
 require_once "backend/script/addvid.php";
-require_once "backend/script/removevid.php";
-require_once "backend/script/modifvid.php";
+require_once "backend/script/viewAllVid.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -37,6 +36,16 @@ require "include/head.php";
                         <option value="Animation">Animation</option>
                         <option value="Arts Martiaux">Arts Martiaux</option>
                         <option value="Biopic">Biopic</option>
+                        <option value="Science-fiction">Science fiction</option>
+                        <option value="Fantastique">Fantastique</option>
+                        <option value="Comedie">Comedie</option>
+                        <option value="Drame">Drame</option>
+                        <option value="Historique">Historique</option>
+                        <option value="Espionnage">Espionnage</option>
+                        <option value="Guerre">Guerre</option>
+                        <option value="Famille">Famille</option>
+                        <option value="Documentaire">Documentaire</option>
+                        <option value="Horreur">Horreur</option>
                     </select>
                     <textarea name="movie_description" cols="30" rows="10" placeholder="description"></textarea>
                     <label for="movie_cover">Image de la video</label>
@@ -51,14 +60,15 @@ require "include/head.php";
                 <form method="post">
                     <span class="search__item"><input type="search" placeholder="Titre" name="movie_del_search"><button name="search_movie"><i class=' fa-brands fa-searchengin'></i></button></span>
                     <div class="search__item--result">
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
-                        <p class="search__item--list">Lorem, ipsum dolor. <i class="fa-solid fa-delete-left"></i></p>
+                        <?php
+                        if (isset($videos)) {
+                            foreach ($videos as $video) {
+                        ?>
+                                <p class="search__item--list"><?= $video->getVidName() ?><a href="backend/script/removvid.php?id=<?= $video->getVidId() ?>"> <i class="fa-solid fa-delete-left"></i></a></p>
+                        <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </form>
             </fieldset>

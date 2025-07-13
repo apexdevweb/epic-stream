@@ -1,5 +1,5 @@
 <?php
-require "backend/connection/Db_connection.php";
+require_once "backend/connection/Db_connection.php";
 require "backend/class/Video.php";
 
 try {
