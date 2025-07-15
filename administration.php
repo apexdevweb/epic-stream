@@ -3,6 +3,7 @@ require "backend/security/adminSecure.php";
 require "include/title.php";
 require_once "backend/script/addvid.php";
 require_once "backend/script/viewAllVid.php";
+require "backend/script/getVisite.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -98,10 +99,50 @@ require "include/head.php";
     <footer>
         <p class="footer__signature"><?= $footer_signature ?></p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/chart.js"></script>
     <script src="assets/js/paramsVid.js"></script>
     <script src="assets/js/mobilemenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);
+        gradient.addColorStop(0, "#0099f7");
+        gradient.addColorStop(1, "#f11712");
+        new Chart(ctx, {
+            type: "line",
+            data: {
+                labels: [
+                    "Janvier",
+                    "Fevrier",
+                    "Mars",
+                    "Avril",
+                    "Mais",
+                    "Juin",
+                    "juillet",
+                    "Aout",
+                    "Septembre",
+                    "Octobre",
+                    "Novembre",
+                    "Decembre",
+                ],
+                datasets: [{
+                    label: "Nombre de visites",
+                    data: <?php echo json_encode(array_values($monthlyCounts)); ?>,
+                    backgroundColor: "#fff",
+                    borderColor: gradient,
+                    borderWidth: 2,
+                    fill: false,
+                }, ],
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    },
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
