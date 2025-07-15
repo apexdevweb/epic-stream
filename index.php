@@ -2,6 +2,7 @@
 session_start();
 require "include/title.php";
 require "backend/script/viewAllVid.php";
+require "backend/script/visites.php";
 ?>
 
 <!DOCTYPE html>
