@@ -7,6 +7,11 @@
   align-items: flex-start;
   justify-content: center;
 }
+.header__primary {
+  background: url("../wallpapper/papperOne.png") no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+}
 .header__primary--title {
   color: transparent;
   font-size: var(--font-size-ftSizeMedium);
