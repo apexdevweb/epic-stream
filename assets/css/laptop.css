@@ -1,0 +1,122 @@
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  /*header*/
+  .header__primary,
+  .nav__primary {
+    height: auto;
+    width: 100%;
+  }
+  .item__list--primary {
+    margin-top: 0;
+    margin-left: 0;
+    height: 12vh;
+    width: 96%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background-color-bgColorEl);
+    border-radius: 10px;
+  }
+  .nav__item {
+    list-style-type: none;
+  }
+  /*header fin*/
+  /*mobile menu*/
+  .barrets__container,
+  .barre {
+    display: none;
+  }
+  /*mobile menu fin*/
+  /*section vignette index container*/
+  .home__page {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  /*section vignette index container fin*/
+  /*article vignette index*/
+  .vid__article--primary-container {
+    height: 37vh;
+    width: 32.5vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .vid__article--pict {
+    height: 37vh;
+    width: 100%;
+  }
+  .vid__article--img {
+    height: 280px;
+    width: 200px;
+  }
+  .vid__article--btn-view {
+    height: 4vh;
+    width: auto;
+  }
+  /*article vignette index fin*/
+  /*main wrapper*/
+  .main__wrapper {
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 10px 0;
+  }
+  .secondary__title {
+    font-family: var(--font-family-ftFamilyOne);
+    font-size: var(--font-size-ftSizeStandar);
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  /*main wrapper fin*/
+  /*grid catégories*/
+  .container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "A B C"
+      "D E F"
+      "G H I"
+      "J K L"
+      "M N O";
+  }
+  .A,
+  .B,
+  .C,
+  .D,
+  .E,
+  .F,
+  .G,
+  .H,
+  .I,
+  .J,
+  .K,
+  .L,
+  .M,
+  .N,
+  .O {
+    height: 10vh;
+    width: auto;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+  }
+  /*grid catégories fin*/
+}

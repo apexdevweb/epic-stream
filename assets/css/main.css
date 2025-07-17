@@ -3,10 +3,10 @@
 @import "header.css";
 @import "footer.css";
 @import "articles.css";
+@import "mobilemenu.css";
 @import "tablette.css";
 @import "laptop.css";
 @import "desktop.css";
-@import "mobilemenu.css";
 @import "logAdm.css";
 @import "administrator.css";
 /*MOBILE FIRST DESIGN*/
@@ -59,6 +59,8 @@ body {
   background-color: #222;
 }
 .container {
+  height: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

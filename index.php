@@ -30,25 +30,26 @@ require "include/head.php";
         <hr class="main__separate">
         <section class="home__page">
             <?php
-            if (isset($videos)) {
-                foreach ($videos as $video) {
-            ?>
-                    <article class="vid__article--primary-container">
-                        <picture class="vid__article--pict">
-                            <img src="assets/images/<?= $video->getVidCover() ?>" alt="<?= $video->getVidName() ?>" class="vid__article--img">
-                        </picture>
-                        <button class="vid__article--btn-view"><a href="video.php?id=<?= $video->getVidId() ?>">View</a></button>
-                    </article>
-                <?php
-                }
-            } elseif (isset($founded_movies)) {
+            if (isset($founded_movies)) {
                 foreach ($founded_movies as $movie_found) {
-                ?>
+            ?>
                     <article class="vid__article--primary-container">
                         <picture class="vid__article--pict">
                             <img src="assets/images/<?= $movie_found->getVidCover() ?>" alt="<?= $movie_found->getVidName() ?>" class="vid__article--img">
                         </picture>
                         <button class="vid__article--btn-view"><a href="video.php?id=<?= $movie_found->getVidId() ?>">View</a></button>
+                    </article>
+                <?php
+                }
+            } elseif (isset($videos)) {
+                foreach ($videos as $video) {
+                ?>
+
+                    <article class="vid__article--primary-container">
+                        <picture class="vid__article--pict">
+                            <img src="assets/images/<?= $video->getVidCover() ?>" alt="<?= $video->getVidName() ?>" class="vid__article--img">
+                        </picture>
+                        <button class="vid__article--btn-view"><a href="video.php?id=<?= $video->getVidId() ?>">View</a></button>
                     </article>
             <?php
                 }

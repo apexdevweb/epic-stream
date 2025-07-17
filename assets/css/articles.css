@@ -11,13 +11,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.vid__article--primary-container > hr {
-  border: none;
-  background-color: #fff;
-  height: 2px;
-  width: 50%;
-}
 .vid__article--pict {
   height: 37vh;
   width: 100%;
